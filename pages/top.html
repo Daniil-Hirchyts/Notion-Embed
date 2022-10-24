@@ -11,10 +11,16 @@
 
     /*CSS RESETS*/
 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgba(0, 0, 0, 0);
+    }
+
     body{
       background-color: #fff;
       line-height: 1.6;
-
     }
 
     h1 {
@@ -40,15 +46,19 @@
       padding: 10px 25px 10px 25px;
       border-radius: 10px;
       background: #252525;
-      width: 85vw;
+      width: 100%;
+      /*width: 85vw;*/
       color: #fff;
       display: inline-block;
       box-shadow: 2px 2px 1px 0 #ffffff;
     }
 
-    .card:hover {
-      margin-top: 2px;
-      box-shadow: none;
+    .card:hover .clock,
+    .card:hover .time,
+    .card:hover .date,
+    .card:hover .greet {
+        color: #fff;
+        text-shadow: 0 0 10px #fff;
     }
 
     .clock {
