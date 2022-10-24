@@ -15,7 +15,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-color: rgba(0, 0, 0, 0);
+    }
+
+    html, body > div {
+      background-color: #191919;
     }
 
     body{
@@ -50,7 +53,9 @@
       /*width: 85vw;*/
       color: #fff;
       display: inline-block;
-      box-shadow: 2px 2px 1px 0 #ffffff;
+      box-shadow: 0px 0px 10px #fff;
+      transition: all 0.3s ease-in;
+
     }
 
     .card:hover .clock,
@@ -61,21 +66,31 @@
         text-shadow: 0 0 10px #fff;
     }
 
+    .card:hover {
+      box-shadow: 0px 0px 15px #fff;
+    }
+
     .clock {
       display: inline;
       font-family: 'Bebas Neue', cursive;
       font-size: 2em;
+      transition: all 0.3s ease-in;
+
 
     }
 
     .time {
       display: inline;
       min-width: 37px;
+      transition: all 0.3s ease-in;
+
     }
 
     .colon {
       font-size: 1.1em;
       display: inline-block;
+      transition: all 0.3s ease-in;
+
     }
 
     .date {
@@ -84,6 +99,8 @@
       font-family: 'Bebas Neue', cursive;
       font-size: 2em;
       padding-right: 30px;
+      transition: all 0.3s ease-in;
+
     }
     .greet{
 
@@ -91,6 +108,8 @@
       font-family: 'Dancing Script', cursive;
       font-size: 2rem;
       padding-right: 30px;
+      transition: all 0.3s ease-in;
+
     }
 
   </style>
